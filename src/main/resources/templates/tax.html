@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:Sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>currency converter!</title>
+    </head>
+    <body>
+       <h1>Currency Conversion Calculator</h1>
+        <!-- <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1> -->
+        <form action="/tax.html" method="post">
+         <Label>US Dollar (Value)</Label>
+         <input type="text" name="usd" />
+            <input type="submit" value="convert"/> 
+         <h2>Conversion Value</h2>
+         <br/><br/>
+          <Label>Indian Rupee</Label>
+        </form>
+        <span th:text="${tax}"></span>
+    </body>
+</html>
